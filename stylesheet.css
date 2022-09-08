@@ -1,0 +1,34 @@
+img {
+  max-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  text-decoration: none;
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+  text-align: left;
+  max-width: 10rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+footer {
+  text-align: left;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  position: sticky;
+  top: 100vh;
+  background-color: grey;
+}
+.bund {
+  text-align: center;
+  margin-top: 1.5rem;
+}
