@@ -58,3 +58,36 @@ footer {
   text-align: center;
   margin-top: 1.5rem;
 }
+
+/* header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+} */
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  height: 100%;
+}
+header img {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  max-width: 10rem;
+  text-decoration: none;
+}
+.sidebar ul {
+  list-style: none;
+  font-size: larger;
+}
+.sidebar ul a {
+  display: block;
+}
+
+article h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
