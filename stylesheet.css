@@ -25,6 +25,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: #f5f5f5;
 }
 
 .logo {
@@ -85,10 +86,21 @@ header img {
 }
 .sidebar ul a {
   display: block;
+  padding-top: 20px;
+  letter-spacing: 5px;
+}
+
+.sidebar ul a:hover {
+  color: rgb(146, 120, 120);
 }
 
 article h1 {
   text-align: center;
   margin-top: 2rem;
   font-size: 2rem;
+  letter-spacing: 15px;
+}
+
+article h2 {
+  letter-spacing: 6px;
 }
