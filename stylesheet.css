@@ -1,3 +1,21 @@
+html {
+  /* farve */
+  --border: #484848;
+  --pink: #ffc7c7;
+  --grøn: #97d9ce;
+  --gul: #f8de7d;
+  --blå: #b9c3f8;
+
+  /* paddig */
+  --space-xxs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-xxl: 6rem;
+}
+
 img {
   max-width: 100%;
 }
@@ -6,6 +24,7 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .logo {
@@ -21,13 +40,19 @@ body {
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 footer {
   text-align: left;
   margin-top: 1.5rem;
   padding-top: 1.5rem;
   position: sticky;
   top: 100vh;
-  background-color: grey;
+  background-color: var(--border);
+  color: white;
 }
 .bund {
   text-align: center;
