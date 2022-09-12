@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title>Marius - Sko Tøj</title>
+    <title>Marius - Skotøj</title>
     <link rel="stylesheet" href="stylesheet.css" />
     <link rel="stylesheet" href="layout.css" />
   </head>
@@ -29,33 +29,26 @@
       </ul>
     </div>
     <main>
-      <section>
+      <div><h1>SKOTØJ - MARIUS' SKO</h1></div>
+
+      <section></section>
+      <!-- evt. giv id, hvis det bliver relevant med flere sectiontags -->
+      <!-- her vores array loopes -->
+
+      <template>
+        <!-- det skal være et templatetag og ikke sectiontag her, da sectiontagget ikke vil loopes -->
         <article>
-          <div><h1>SKOTØJ - MARIUS' SKO</h1></div>
           <div class="grid_4-1">
             <div>
-              <img src="img/blå.webp" alt="blå" />
-              <h2>Tekst 1</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus odio harum hic commodi laudantium culpa nisi explicabo nihil quae. Deserunt eum maiores iure soluta quos ipsa dolore, similique rem quod.</p>
-            </div>
-            <div>
-              <img src="img/grøn.webp" alt="grøn" />
-              <h2>Tekst 2</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus odio harum hic commodi laudantium culpa nisi explicabo nihil quae. Deserunt eum maiores iure soluta quos ipsa dolore, similique rem quod.</p>
-            </div>
-            <div>
-              <img src="img/gul.webp" alt="gul" />
-              <h2>Tekst 3</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus odio harum hic commodi laudantium culpa nisi explicabo nihil quae. Deserunt eum maiores iure soluta quos ipsa dolore, similique rem quod.</p>
-            </div>
-            <div>
-              <img src="img/rød.webp" alt="rød" />
-              <h2>Tekst 4</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus odio harum hic commodi laudantium culpa nisi explicabo nihil quae. Deserunt eum maiores iure soluta quos ipsa dolore, similique rem quod.</p>
+              <!-- giv den her div en class, og ændr i css -->
+              <img src="" alt="" class="billede" />
+              <h2 class="skomærke"></h2>
+              <h2 class="skonavn"></h2>
+              <h2 class="skotype"></h2>
             </div>
           </div>
         </article>
-      </section>
+      </template>
     </main>
     <footer>
       <li class="footer">
@@ -73,5 +66,6 @@
         </ul>
       </li>
     </footer>
+    <script src="skojavascript.js"></script>
   </body>
 </html>
