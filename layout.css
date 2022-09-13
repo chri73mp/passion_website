@@ -1,65 +1,19 @@
-.grid_7-1 {
+#grid_4-1 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
-}
-.grid_4-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 3rem 3rem;
-
-  text-align: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  max-width: 40rem;
   margin-left: auto;
   margin-right: auto;
-  max-width: 40rem;
-  justify-content: center;
+
+  text-align: center;
 }
 
-.grid_7-2 {
+.grid_7-3 {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
-}
-
-.forside1 {
-  grid-row: 1;
-  grid-column: 3;
-}
-
-.forside2 {
-  grid-row: 1;
-  grid-column: 4;
-}
-
-.forside3 {
-  grid-row: 1;
-  grid-column: 5;
-}
-
-.forside4 {
-  grid-row: 2;
-  grid-column: 3;
-}
-.forside5 {
-  grid-row: 2;
-  grid-column: 4;
-}
-.forside6 {
-  grid-row: 2;
-  grid-column: 5;
-}
-.forside7 {
-  grid-row: 3;
-  grid-column: 3;
-}
-.forside8 {
-  grid-row: 3;
-  grid-column: 4;
-}
-.forside9 {
-  grid-row: 3;
-  grid-column: 5;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
 }

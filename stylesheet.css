@@ -61,15 +61,6 @@ footer {
   margin-top: 1.5rem;
 }
 
-/* header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-top: 2rem;
-} */
-
 .sidebar {
   position: fixed;
   left: 0;
@@ -94,7 +85,7 @@ header img {
   color: rgb(146, 120, 120);
 }
 
-article h1 {
+h1 {
   text-align: center;
   margin-top: 2rem;
   font-size: 2rem;
