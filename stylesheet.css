@@ -59,6 +59,7 @@ footer {
 }
 .h3 {
   color: white;
+  list-style: none;
 }
 .bund {
   text-align: center;
@@ -98,6 +99,9 @@ h1 {
 
 article h2 {
   letter-spacing: 0.3rem;
+  display: inline-block;
+  overflow: hidden;
+  font-size: 1rem;
 }
 
 @media (min-width: 992px) {
