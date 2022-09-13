@@ -68,6 +68,23 @@ function vis() {
 //   popup.querySelector("p+p").textContent = "Pris pr. ret: " + retDetaljer.pris + " kr.";
 // }
 
+document
+  .querySelector("#popup")
+  .addEventListener("click", () => (popup.style.display = "none"));
+// array loades ikke, hvis 'popup.style.display' ikke er der i string. Gør den, så 'none'/css'en loades? idk
+// eller også gør den, så når der klikkes, at 'none' disregardes?
+//
+
+function visDetaljer(retDetaljer) {
+  console.log("retDetaljer");
+  const popup = document.querySelector("#popup");
+  popup.style.display = "flex";
+  // popup vil ikke ske, hvis ovenstående ikke er skrevet. De to 'display.style' skal altså være der, før modalvisning virker.
+  popup.querySelector("img").src = retDetaljer.billednavn + "-md.jpg";
+  popup.querySelector("h2").textContent = retDetaljer.navn;
+  popup.querySelector("p").textContent = retDetaljer.langbeskrivelse;
+}
+
 hentData();
 
 // BURGERMENU

@@ -104,6 +104,42 @@ article h2 {
   font-size: 1rem;
 }
 
+#popup {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  /* ellers er popup'en der fra load */
+  align-items: center;
+  justify-content: center;
+}
+
+#popup article {
+  width: 60%;
+  background-color: white;
+}
+
+#popup img {
+  width: 60%;
+  float: right;
+  margin: 30px;
+}
+
+#popup h2 {
+  margin-top: 40px;
+  margin-left: 40px;
+  font-family: "Staatliches", cursive;
+  font-size: 40px;
+}
+
+#popup p {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
 @media (min-width: 992px) {
   .mobil_header {
     display: none;
