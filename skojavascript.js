@@ -80,9 +80,10 @@ function visDetaljer(retDetaljer) {
   const popup = document.querySelector("#popup");
   popup.style.display = "flex";
   // popup vil ikke ske, hvis ovenstående ikke er skrevet. De to 'display.style' skal altså være der, før modalvisning virker.
-  popup.querySelector("img").src = retDetaljer.billednavn + "-md.jpg";
-  popup.querySelector("h2").textContent = retDetaljer.navn;
-  popup.querySelector("p").textContent = retDetaljer.langbeskrivelse;
+  popup.querySelector("img").src = "img/" + sko.billede;
+  popup.querySelector("h2").textContent = sko.skomærke;
+  popup.querySelector("p").textContent = sko.skonavn;
+  popup.querySelector("p+p").textContent = sko.skotype;
 }
 
 hentData();
