@@ -5,6 +5,7 @@ html {
   --grøn: #97d9ce;
   --gul: #f8de7d;
   --blå: #b9c3f8;
+  --hover: #927878;
 
   /* paddig */
   --space-xxs: 0.5rem;
@@ -82,7 +83,7 @@ header img {
 }
 
 .sidebar ul a:hover {
-  color: rgb(146, 120, 120);
+  color: var(--hover);
 }
 
 h1 {
