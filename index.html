@@ -1,69 +1,94 @@
 <!DOCTYPE html>
 <html lang="da">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forside - Skotøj</title>
-    <link rel="stylesheet" href="stylesheet.css" />
-    <link rel="stylesheet" href="layout.css" />
-  </head>
-  <body>
-    <div class="sidebar">
-      <header>
-        <a href="index.html"><img src="img/logo.svg" alt="icon" /></a>
-        <ul>
-          <li>
-            <a href="allesko.html">ALLE SKO</a>
-          </li>
-          <li>
-            <a href="marie.html">MARIES SKO</a>
-          </li>
 
-          <li>
-            <a href="marius.html">MARIUS' SKO</a>
-          </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forside - Skotøj</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="layout.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-          <li>
-            <a href="christine.html">CHRISTINES SKO</a>
-          </li>
-        </ul>
-      </header>
+<body>
+  <!-- Mobile menu start (adapted from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp) -->
+  <div class="mobil_header">
+    <div class="topnav">
+      <a onclick="menuToggle()" class="active"><img src="img/logo.svg" alt="icon" id="logo" />
+      </a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="allesko.html">ALLE SKO</a>
+        <a href="marie.html">MARIES SKO</a>
+        <a href="marius.html">MARIUS' SKO</a>
+        <a href="christine.html">CHRISTINES SKO</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a class="icon" onclick="menuToggle()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-    <main>
-      <section>
-        <article>
-          <div><h1>SKOTØJ - CHRISTINE - MARIE - MARIUS</h1></div>
-          <div class="grid_7-3">
-            <img class="forside1" src="img/forside7.webp" alt="forside1" />
-            <img class="forside2" src="img/forside7.webp" alt="forside2" />
-            <img class="forside3" src="img/forside7.webp" alt="forside3" />
-            <img class="forside4" src="img/forside7.webp" alt="forside4" />
-            <img class="forside5" src="img/forside7.webp" alt="forside5" />
-            <img class="forside6" src="img/forside7.webp" alt="forside6" />
-            <img class="forside7" src="img/forside7.webp" alt="forside7" />
-            <img class="forside8" src="img/forside7.webp" alt="forside8" />
-            <img class="forside9" src="img/forside7.webp" alt="forside9" />
-          </div>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <li class="footer">
-        <ul>
-          <h3>Teskt</h3>
-        </ul>
-        <ul>
-          <h3>Teskt</h3>
-        </ul>
-        <ul>
-          <h3>Teskt</h3>
-        </ul>
-        <ul class="bund">
-          <h3>MARIUS, MARIE, CHRISTINE (C) 2022</h3>
-        </ul>
-      </li>
-    </footer>
-    <!-- <script src="skojavascript.js"></script> -->
-  </body>
+  </div>
+  <!-- Mobile menu end -->
+  <div class="sidebar">
+    <header>
+      <a href="index.html"><img src="img/logo.svg" alt="icon" /></a>
+      <ul>
+        <li>
+          <a href="allesko.html">ALLE SKO</a>
+        </li>
+        <li>
+          <a href="marie.html">MARIES SKO</a>
+        </li>
+
+        <li>
+          <a href="marius.html">MARIUS' SKO</a>
+        </li>
+
+        <li>
+          <a href="christine.html">CHRISTINES SKO</a>
+        </li>
+      </ul>
+    </header>
+  </div>
+  <main>
+    <section>
+      <article>
+        <div>
+          <h1>SKOTØJ - CHRISTINE - MARIE - MARIUS</h1>
+        </div>
+        <div class="grid_7-3">
+          <img class="forside1" src="img/forside7.webp" alt="forside1" />
+          <img class="forside2" src="img/forside7.webp" alt="forside2" />
+          <img class="forside3" src="img/forside7.webp" alt="forside3" />
+          <img class="forside4" src="img/forside7.webp" alt="forside4" />
+          <img class="forside5" src="img/forside7.webp" alt="forside5" />
+          <img class="forside6" src="img/forside7.webp" alt="forside6" />
+          <img class="forside7" src="img/forside7.webp" alt="forside7" />
+          <img class="forside8" src="img/forside7.webp" alt="forside8" />
+          <img class="forside9" src="img/forside7.webp" alt="forside9" />
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <li class="footer">
+      <ul>
+        <h3>Teskt</h3>
+      </ul>
+      <ul>
+        <h3>Teskt</h3>
+      </ul>
+      <ul>
+        <h3>Teskt</h3>
+      </ul>
+      <ul class="bund">
+        <h3>MARIUS, MARIE, CHRISTINE (C) 2022</h3>
+      </ul>
+    </li>
+  </footer>
+  <!-- <script src="skojavascript.js"></script> -->
+</body>
+
 </html>
