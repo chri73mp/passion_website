@@ -57,6 +57,9 @@ footer {
   background-color: var(--border);
   color: white;
 }
+.h3 {
+  color: white;
+}
 .bund {
   text-align: center;
   margin-top: 1.5rem;
