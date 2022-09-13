@@ -16,3 +16,50 @@
   max-width: 40rem;
   justify-content: center;
 }
+
+.grid_7-2 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.forside1 {
+  grid-row: 1;
+  grid-column: 3;
+}
+
+.forside2 {
+  grid-row: 1;
+  grid-column: 4;
+}
+
+.forside3 {
+  grid-row: 1;
+  grid-column: 5;
+}
+
+.forside4 {
+  grid-row: 2;
+  grid-column: 3;
+}
+.forside5 {
+  grid-row: 2;
+  grid-column: 4;
+}
+.forside6 {
+  grid-row: 2;
+  grid-column: 5;
+}
+.forside7 {
+  grid-row: 3;
+  grid-column: 3;
+}
+.forside8 {
+  grid-row: 3;
+  grid-column: 4;
+}
+.forside9 {
+  grid-row: 3;
+  grid-column: 5;
+}
