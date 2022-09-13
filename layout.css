@@ -1,18 +1,19 @@
-.grid_7-1 {
+#grid_4-1 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
-}
-.grid_4-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 3rem 3rem;
-
-  text-align: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  max-width: 40rem;
   margin-left: auto;
   margin-right: auto;
+
+  text-align: center;
+}
+
+.grid_7-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
   max-width: 40rem;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
