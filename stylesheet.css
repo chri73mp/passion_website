@@ -5,6 +5,7 @@ html {
   --grøn: #97d9ce;
   --gul: #f8de7d;
   --blå: #b9c3f8;
+  --hover: #927878;
 
   /* paddig */
   --space-xxs: 0.5rem;
@@ -56,6 +57,9 @@ footer {
   background-color: var(--border);
   color: white;
 }
+.h3 {
+  color: white;
+}
 .bund {
   text-align: center;
   margin-top: 1.5rem;
@@ -82,7 +86,7 @@ header img {
 }
 
 .sidebar ul a:hover {
-  color: rgb(146, 120, 120);
+  color: var(--hover);
 }
 
 h1 {
@@ -135,6 +139,7 @@ article h2 {
     padding: 14px 16px;
     text-decoration: none;
     display: block;
+    margin-left: 1rem;
   }
 
   /* Style the hamburger menu */
@@ -143,5 +148,16 @@ article h2 {
     position: absolute;
     right: 0;
     top: 0;
+  }
+
+  #logo {
+    max-width: 10rem;
+    margin-left: -1rem;
+  }
+
+  h1 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 1.5rem;
   }
 }

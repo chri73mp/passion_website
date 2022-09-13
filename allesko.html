@@ -1,98 +1,115 @@
 <!DOCTYPE html>
 <html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alle sko - Skotøj</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alle sko - Skotøj</title>
-  <link rel="stylesheet" href="stylesheet.css" />
-  <link rel="stylesheet" href="layout.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-  <!-- Mobile menu start (adapted from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp) -->
-  <div class="mobil_header">
-    <div class="topnav">
-      <a onclick="menuToggle()" class="active"><img src="img/logo.svg" alt="icon" id="logo" />
-      </a>
-      <!-- Navigation links (hidden by default) -->
-      <div id="myLinks">
-        <a href="allesko.html">ALLE SKO</a>
-        <a href="marie.html">MARIES SKO</a>
-        <a href="marius.html">MARIUS' SKO</a>
-        <a href="christine.html">CHRISTINES SKO</a>
-      </div>
-      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-      <a class="icon" onclick="menuToggle()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-  </div>
-  <!-- Mobile menu end -->
-  <div class="sidebar">
-    <header>
-      <a href="index.html"><img src="img/logo.svg" alt="icon" /></a>
-    </header>
-    <ul>
-      <li>
-        <a href="allesko.html">ALLE SKO</a>
-      </li>
-      <li>
-        <a href="marie.html">MARIES SKO</a>
-      </li>
-
-      <li>
-        <a href="marius.html">MARIUS' SKO</a>
-      </li>
-
-      <li>
-        <a href="christine.html">CHRISTINES SKO</a>
-      </li>
-    </ul>
-  </div>
-  <main>
-    <div>
-      <h1>SKOTØJ - MARIES SKO</h1>
-    </div>
-
-    <section id="grid_4-1"></section>
-    <!-- evt. giv id, hvis det bliver relevant med flere sectiontags -->
-    <!-- her vores array loopes -->
-
-    <template>
-      <!-- det skal være et templatetag og ikke sectiontag her, da sectiontagget ikke vil loopes -->
-      <article>
-        <div class="grid_4-1">
-          <div>
-            <!-- giv den her div en class, og ændr i css -->
-            <img src="" alt="" class="billede" />
-            <h2 class="skomærke"></h2>
-            <h2 class="skonavn"></h2>
-            <h2 class="skotype"></h2>
-          </div>
+  <body>
+    <!-- Mobile menu start (adapted from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp) -->
+    <div class="mobil_header">
+      <div class="topnav">
+        <a onclick="menuToggle()" class="active"
+          ><img src="img/logo.svg" alt="icon" id="logo" />
+        </a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="allesko.html">ALLE SKO</a>
+          <a href="marie.html">MARIES SKO</a>
+          <a href="marius.html">MARIUS' SKO</a>
+          <a href="christine.html">CHRISTINES SKO</a>
         </div>
-      </article>
-    </template>
-  </main>
-  <footer>
-    <li class="footer">
-      <ul>
-        <h3>Teskt</h3>
-      </ul>
-      <ul>
-        <h3>Teskt</h3>
-      </ul>
-      <ul>
-        <h3>Teskt</h3>
-      </ul>
-      <ul class="bund">
-        <h3>MARIUS, MARIE, CHRISTINE (C) 2022</h3>
-      </ul>
-    </li>
-  </footer>
-  <script src="skojavascript.js"></script>
-</body>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a class="icon" onclick="menuToggle()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    <!-- Mobile menu end -->
+    <div class="sidebar">
+      <header>
+        <a href="index.html"><img src="img/logo.svg" alt="icon" /></a>
+        <ul>
+          <li>
+            <a href="allesko.html">ALLE SKO</a>
+          </li>
+          <li>
+            <a href="marie.html">MARIES SKO</a>
+          </li>
 
+          <li>
+            <a href="marius.html">MARIUS' SKO</a>
+          </li>
+
+          <li>
+            <a href="christine.html">CHRISTINES SKO</a>
+          </li>
+        </ul>
+      </header>
+    </div>
+    <main>
+      <div>
+        <h1>SKOTØJ - MARIES SKO</h1>
+      </div>
+
+      <section id="grid_4-1"></section>
+      <!-- evt. giv id, hvis det bliver relevant med flere sectiontags -->
+      <!-- her vores array loopes -->
+
+      <template>
+        <!-- det skal være et templatetag og ikke sectiontag her, da sectiontagget ikke vil loopes -->
+        <article>
+          <div class="grid_4-1">
+            <div>
+              <!-- giv den her div en class, og ændr i css -->
+              <img src="" alt="" class="billede" />
+              <h2 class="skomærke"></h2>
+              <h2 class="skonavn"></h2>
+              <h2 class="skotype"></h2>
+            </div>
+          </div>
+        </article>
+      </template>
+    </main>
+    <footer>
+      <li class="footer">
+        <ul>
+          <a
+            class="h3"
+            href="https://www.instagram.com/lundorfisaksen/"
+            target="_blank"
+            >@LUNDORFISAKSEN</a
+          >
+        </ul>
+        <ul>
+          <a
+            class="h3"
+            href="https://www.instagram.com/mariusewers/"
+            target="_blank"
+            >@MARIUSEWERS</a
+          >
+        </ul>
+        <ul>
+          <a
+            class="h3"
+            href="https://www.instagram.com/christineduring/"
+            target="_blank"
+            >@CHRISTINEDURING</a
+          >
+        </ul>
+        <ul class="bund">
+          <h3>MARIUS, MARIE, CHRISTINE (C) 2022</h3>
+        </ul>
+      </li>
+    </footer>
+    <script src="skojavascript.js"></script>
+  </body>
 </html>
