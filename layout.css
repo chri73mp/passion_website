@@ -25,4 +25,11 @@
     margin-right: 2rem;
     text-align: center;
   }
+  .grid_7-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
