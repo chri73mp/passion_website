@@ -139,6 +139,7 @@ article h2 {
     padding: 14px 16px;
     text-decoration: none;
     display: block;
+    margin-left: 1rem;
   }
 
   /* Style the hamburger menu */
@@ -147,5 +148,15 @@ article h2 {
     position: absolute;
     right: 0;
     top: 0;
+  }
+
+  #logo {
+    max-width: 10rem;
+    margin-left: -1rem;
+  }
+
+  h1 {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
