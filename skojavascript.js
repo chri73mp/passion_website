@@ -42,6 +42,7 @@ function vis() {
       loop.querySelector(".skomærke").textContent = sko.skomærke;
       loop.querySelector(".model").textContent = sko.model;
       loop.querySelector(".skotype").textContent = sko.skotype;
+      // loop.querySelector("h1").textContent = "ALLE SKO";
       section.appendChild(loop);
     }
   });

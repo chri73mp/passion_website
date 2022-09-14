@@ -1,3 +1,4 @@
+/* desktop ik?? */
 @media (min-width: 992px) {
   #grid_4-1 {
     display: grid;
@@ -6,7 +7,6 @@
     max-width: 40rem;
     margin-left: auto;
     margin-right: auto;
-
     text-align: center;
   }
 
@@ -18,7 +18,18 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* styling af linkbillede */
+  .forside5 {
+    border-style: solid;
+    border-width: 2rem;
+    border-color: pink;
+    position: relative;
+    /* find ud af, hvordan man får den 'over' de andre */
+  }
 }
+
+/* mobile tror jeg */
 @media (max-width: 992px) {
   #grid_4-1 {
     margin-left: 2rem;
@@ -31,5 +42,13 @@
     gap: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  .forside5 {
+    border-style: solid;
+    border-width: 2rem;
+    border-color: pink;
+    position: relative;
+    /* find ud af, hvordan man får den 'over' de andre */
   }
 }
