@@ -17,11 +17,11 @@
         <a onclick="menuToggle()" class="active"><img src="img/logo.svg" alt="icon" id="logo" /> </a>
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
-          <a href="allesko.html">ALLE SKO</a>
-          <a href="marie.html">MARIES SKO</a>
-          <a href="marius.html">MARIUS' SKO</a>
-          <a href="christine.html">CHRISTINES SKO</a>
-        </div>
+          <button data-sko="alle" class="valgt">ALLE SKO</button>
+            <button data-sko="marie" class="">MARIES SKO</button>
+            <button data-sko="marius" class="">MARIUS' SKO</button>
+            <button data-sko="christine" class="">CHRISTINES SKO</button>
+
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a class="icon" onclick="menuToggle()">
           <i class="fa fa-bars"></i>
@@ -50,7 +50,7 @@
     </div>
     <main>
       <div>
-        <h1>SKOTØJ - MARIES SKO</h1>
+        <!-- <h1></h1> -->
       </div>
 
       <section id="grid_4-1"></section>
@@ -58,6 +58,7 @@
       <!-- her vores array loopes -->
 
       <template>
+         <h1></h1>
         <!-- det skal være et templatetag og ikke sectiontag her, da sectiontagget ikke vil loopes -->
         <article>
           <div class="grid_4-1">
