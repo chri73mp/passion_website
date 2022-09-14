@@ -8,9 +8,7 @@ const options = {
 let data;
 let filter = "alle";
 
-document
-  .querySelectorAll("a")
-  .forEach((knap) => knap.addEventListener("click", filtrerSko));
+document.querySelectorAll("button").forEach((knap) => knap.addEventListener("click", filtrerSko));
 
 function filtrerSko() {
   filter = this.dataset.sko;
@@ -39,12 +37,10 @@ function vis() {
     if (filter == "alle" || filter == sko.person) {
       // skal filtreres mellem 'person', som 'kategori' i babushkaopgaven
       const loop = template.cloneNode(true);
-      loop
-        .querySelector("article")
-        .addEventListener("click", () => visDetaljer(sko));
+      loop.querySelector("article").addEventListener("click", () => visDetaljer(sko));
       loop.querySelector(".billede").src = "img/" + sko.billede;
       loop.querySelector(".skomærke").textContent = sko.skomærke;
-      loop.querySelector(".skonavn").textContent = sko.skonavn;
+      loop.querySelector(".model").textContent = sko.model;
       loop.querySelector(".skotype").textContent = sko.skotype;
       section.appendChild(loop);
     }
@@ -68,22 +64,21 @@ function vis() {
 //   popup.querySelector("p+p").textContent = "Pris pr. ret: " + retDetaljer.pris + " kr.";
 // }
 
-document
-  .querySelector("#popup")
-  .addEventListener("click", () => (popup.style.display = "none"));
+document.querySelector("#popup").addEventListener("click", () => (popup.style.display = "none"));
 // array loades ikke, hvis 'popup.style.display' ikke er der i string. Gør den, så 'none'/css'en loades? idk
 // eller også gør den, så når der klikkes, at 'none' disregardes?
 //
 
-function visDetaljer(retDetaljer) {
-  console.log("retDetaljer");
+function visDetaljer(skoDetaljer) {
+  console.log("skoDetaljer");
   const popup = document.querySelector("#popup");
   popup.style.display = "flex";
   // popup vil ikke ske, hvis ovenstående ikke er skrevet. De to 'display.style' skal altså være der, før modalvisning virker.
-  popup.querySelector("img").src = "img/" + sko.billede;
-  popup.querySelector("h2").textContent = sko.skomærke;
-  popup.querySelector("p").textContent = sko.skonavn;
-  popup.querySelector("p+p").textContent = sko.skotype;
+  popup.querySelector("img").src = "img/" + skoDetaljer.billede;
+  popup.querySelector("h2").textContent = skoDetaljer.skomærke;
+  popup.querySelector("p").textContent = skoDetaljer.model;
+  popup.querySelector("p+p").textContent = skoDetaljer.skotype;
+  // for at få info i popup'en, skal det lokale funktionsnavn bruges istedet for 'sko', som i funktionen 'vis'/loopview.
 }
 
 hentData();

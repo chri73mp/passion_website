@@ -8,19 +8,14 @@
     <link rel="stylesheet" href="stylesheet.css" />
     <link rel="stylesheet" href="layout.css" />
     <link rel="stylesheet" href="popup.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
 
   <body>
     <!-- Mobile menu start (adapted from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp) -->
     <div class="mobil_header">
       <div class="topnav">
-        <a onclick="menuToggle()" class="active"
-          ><img src="img/logo.svg" alt="icon" id="logo" />
-        </a>
+        <a onclick="menuToggle()" class="active"><img src="img/logo.svg" alt="icon" id="logo" /> </a>
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
           <a href="allesko.html">ALLE SKO</a>
@@ -40,16 +35,16 @@
         <a href="index.html"><img src="img/logo.svg" alt="icon" /></a>
         <ul>
           <li>
-            <a href="allesko.html">ALLE SKO</a>
+            <button data-sko="alle" class="valgt">ALLE SKO</button>
           </li>
           <li>
-            <a href="marie.html">MARIES SKO</a>
+            <button data-sko="marie" class="">MARIES SKO</button>
           </li>
           <li>
-            <a href="marius.html">MARIUS' SKO</a>
+            <button data-sko="marius" class="">MARIUS' SKO</button>
           </li>
           <li>
-            <a href="christine.html">CHRISTINES SKO</a>
+            <button data-sko="christine" class="">CHRISTINES SKO</button>
           </li>
         </ul>
       </header>
@@ -71,8 +66,9 @@
               <!-- giv den her div en class, og ændr i css -->
               <img src="" alt="" class="billede" />
               <h2 class="skomærke"></h2>
-              <h2 class="skonavn"></h2>
+              <h2 class="model"></h2>
               <h2 class="skotype"></h2>
+              <h2 class="person"></h2>
             </div>
           </div>
         </article>
@@ -89,28 +85,13 @@
     <footer>
       <li class="footer">
         <ul>
-          <a
-            class="h3"
-            href="https://www.instagram.com/lundorfisaksen/"
-            target="_blank"
-            >@LUNDORFISAKSEN</a
-          >
+          <a class="h3" href="https://www.instagram.com/lundorfisaksen/" target="_blank">@LUNDORFISAKSEN</a>
         </ul>
         <ul>
-          <a
-            class="h3"
-            href="https://www.instagram.com/mariusewers/"
-            target="_blank"
-            >@MARIUSEWERS</a
-          >
+          <a class="h3" href="https://www.instagram.com/mariusewers/" target="_blank">@MARIUSEWERS</a>
         </ul>
         <ul>
-          <a
-            class="h3"
-            href="https://www.instagram.com/christineduring/"
-            target="_blank"
-            >@CHRISTINEDURING</a
-          >
+          <a class="h3" href="https://www.instagram.com/christineduring/" target="_blank">@CHRISTINEDURING</a>
         </ul>
         <ul class="bund">
           <h3>MARIUS, MARIE, CHRISTINE (C) 2022</h3>
