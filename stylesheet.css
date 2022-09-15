@@ -244,6 +244,20 @@ body {
     display: flex;
   }
 
+  /* styling af forsideknap på mobil, så den ligner desktop */
+  .forside5 {
+    border-style: solid;
+    border-width: 2rem;
+    border-color: #ffc7c7;
+    box-shadow: 2px 3px 10px rgb(77, 71, 71);
+  }
+
+  .forside5:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border-color: #f2b5b5;
+  }
+
   h1 {
     margin: 3rem;
     font-size: 1.5rem;
@@ -280,10 +294,10 @@ body {
     cursor: pointer;
   }
 
-  button:hover {
+  /* Er det til burgermenu? bare ift. forklaring til fremlæggelse hehe (Christines svar: nej ikke til burgermenu) */
+  /*button:hover {
     color: var(--hover);
-    /* Er det til burgermenu? bare ift. forklaring til fremlæggelse hehe */
-  }
+  } */
 
   footer {
     text-align: left;
