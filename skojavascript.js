@@ -8,7 +8,9 @@ const options = {
 let data;
 let filter = "alle";
 
-document.querySelectorAll("button").forEach((knap) => knap.addEventListener("click", filtrerSko));
+document
+  .querySelectorAll("button")
+  .forEach((knap) => knap.addEventListener("click", filtrerSko));
 
 function filtrerSko() {
   filter = this.dataset.sko;
@@ -37,7 +39,9 @@ function vis() {
     if (filter == "alle" || filter == sko.person) {
       // skal filtreres mellem 'person', som 'kategori' i babushkaopgaven
       const loop = template.cloneNode(true);
-      loop.querySelector("article").addEventListener("click", () => visDetaljer(sko));
+      loop
+        .querySelector("article")
+        .addEventListener("click", () => visDetaljer(sko));
       loop.querySelector(".billede").src = "img/" + sko.billede;
       loop.querySelector(".skomærke").textContent = sko.skomærke;
       loop.querySelector(".model").textContent = sko.model;
@@ -65,7 +69,9 @@ function vis() {
 //   popup.querySelector("p+p").textContent = "Pris pr. ret: " + retDetaljer.pris + " kr.";
 // }
 
-document.querySelector("#popup").addEventListener("click", () => (popup.style.display = "none"));
+document
+  .querySelector("#popup")
+  .addEventListener("click", () => (popup.style.display = "none"));
 // array loades ikke, hvis 'popup.style.display' ikke er der i string. Gør den, så 'none'/css'en loades? idk
 // eller også gør den, så når der klikkes, at 'none' disregardes?
 //
