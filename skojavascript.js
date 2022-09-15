@@ -77,8 +77,9 @@ function visDetaljer(skoDetaljer) {
   // popup vil ikke ske, hvis ovenstående ikke er skrevet. De to 'display.style' skal altså være der, før modalvisning virker.
   popup.querySelector("img").src = "img/" + skoDetaljer.billede;
   popup.querySelector("h2").textContent = skoDetaljer.skomærke;
-  popup.querySelector("p").textContent = skoDetaljer.model;
-  popup.querySelector("p+p").textContent = skoDetaljer.skotype;
+  popup.querySelector("h2+h2").textContent = skoDetaljer.model;
+  popup.querySelector("h2+h2+h2").textContent = skoDetaljer.skotype;
+  popup.querySelector("p").textContent = skoDetaljer.beskrivelse;
   // for at få info i popup'en, skal det lokale funktionsnavn bruges istedet for 'sko', som i funktionen 'vis'/loopview.
 }
 

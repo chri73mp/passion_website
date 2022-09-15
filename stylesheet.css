@@ -29,117 +29,6 @@ body {
   background-color: #f5f5f5;
 }
 
-.logo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-top: 2rem;
-}
-.logo img {
-  max-width: 10rem;
-  text-decoration: none;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-footer {
-  text-align: left;
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
-  padding-bottom: 0.5rem;
-  position: sticky;
-  top: 100vh;
-  background-color: var(--border);
-  color: white;
-}
-.h3 {
-  color: white;
-  list-style: none;
-}
-.bund {
-  text-align: center;
-  margin-top: 1.5rem;
-}
-
-.sidebar {
-  position: fixed;
-  left: 0;
-  height: 100%;
-}
-header img {
-  margin-left: 2rem;
-  max-width: 10rem;
-  text-decoration: none;
-}
-.sidebar ul {
-  list-style: none;
-  font-size: 1.5rem;
-}
-.sidebar ul a {
-  display: block;
-  padding-top: 1.25rem;
-  letter-spacing: 0.3rem;
-}
-
-.sidebar ul a:hover {
-  color: var(--hover);
-}
-
-h1 {
-  text-align: center;
-  margin-top: 2rem;
-  font-size: 2rem;
-  letter-spacing: 0.6rem;
-}
-
-article h2 {
-  letter-spacing: 0.3rem;
-  display: inline-block;
-  overflow: hidden;
-  font-size: 1rem;
-}
-
-#popup {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: none;
-  /* ellers er popup'en der fra load */
-  align-items: center;
-  justify-content: center;
-}
-
-#popup article {
-  width: 60%;
-  background-color: white;
-}
-
-#popup img {
-  width: 60%;
-  float: right;
-  margin: 30px;
-}
-
-#popup h2 {
-  margin-top: 40px;
-  margin-left: 40px;
-  font-family: "Staatliches", cursive;
-  font-size: 40px;
-}
-
-#popup p {
-  margin-top: 40px;
-  margin-left: 40px;
-}
-
 @media (min-width: 992px) {
   .mobil_header {
     display: none;
@@ -147,8 +36,142 @@ article h2 {
   /*.sidebar {
     display: block;
   } */
+
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+  }
+  .logo img {
+    max-width: 10rem;
+    text-decoration: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  /* styling af linkbillede */
+  .forside5 {
+    border-style: solid;
+    border-width: 2rem;
+
+    position: relative;
+  }
+
+  footer {
+    text-align: left;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    position: sticky;
+    top: 100vh;
+    background-color: var(--border);
+    color: white;
+  }
+  .h3 {
+    color: white;
+    list-style: none;
+  }
+  .bund {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  .sidebar {
+    position: fixed;
+    left: 0;
+    height: 100%;
+  }
+  header img {
+    margin-left: 2rem;
+    max-width: 10rem;
+    text-decoration: none;
+  }
+  .sidebar ul {
+    list-style: none;
+    font-size: 1.5rem;
+  }
+  button {
+    all: unset;
+    display: block;
+    padding-top: 1.25rem;
+    letter-spacing: 0.3rem;
+    color: black;
+    font: impact;
+    cursor: pointer;
+  }
+
+  button:hover {
+    color: var(--hover);
+    /* Er det til burgermenu? bare ift. forklaring til fremlæggelse hehe */
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    letter-spacing: 0.6rem;
+  }
+
+  article h2 {
+    letter-spacing: 0.3rem;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1rem;
+    margin: 2px;
+  }
+
+  #popup {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    /* ellers er popup'en der fra load */
+    align-items: center;
+    justify-content: center;
+  }
+
+  #popup article {
+    text-align: center;
+    width: 40%;
+    background-color: white;
+  }
+
+  .imgh2container img {
+    width: 100%;
+  }
+
+  .imgh2container h2 {
+    font-family: impact;
+    font-size: 1rem;
+  }
+
+  .imgh2container {
+    padding-top: 1.5rem;
+    width: 80%;
+    margin: auto;
+  }
+
+  article p {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    font-family: cambria;
+    font-size: 0.8rem;
+    text-align: justify;
+  }
 }
 
+/* -----------------------MOBILVIEW------------------------ */
 /* Mobil header style */
 /* Skal kun aktivere på en vis width-size. Ellers default til desktop */
 /* Adapted from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
@@ -195,9 +218,111 @@ article h2 {
     margin-left: -1rem;
   }
 
+  /* for at fjerne ekstra billeder i mobileview */
+  .grid_7-3 img {
+    display: none;
+    visibility: hidden;
+  }
+
+  .grid_7-3 .forside5 {
+    visibility: visible;
+    display: flex;
+  }
+
   h1 {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 3rem;
     font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 0.3rem;
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1rem;
+  }
+
+  article h2 {
+    letter-spacing: 0.3rem;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 2px;
+  }
+
+  article img {
+    width: 60%;
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  button {
+    all: unset;
+    display: block;
+    padding-top: 1.25rem;
+    letter-spacing: 0.3rem;
+    color: black;
+    font: impact;
+    cursor: pointer;
+  }
+
+  button:hover {
+    color: var(--hover);
+    /* Er det til burgermenu? bare ift. forklaring til fremlæggelse hehe */
+  }
+
+  footer {
+    text-align: left;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    position: sticky;
+    top: 100vh;
+    background-color: var(--border);
+    color: white;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  article p {
+    margin: 1rem;
+    font-family: cambria;
+    font-size: 0.7rem;
+    text-align: justify;
+  }
+
+  #popup {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    /* ellers er popup'en der fra load */
+    align-items: center;
+    justify-content: center;
+  }
+
+  #popup article {
+    text-align: center;
+    width: 60%;
+    background-color: white;
+  }
+
+  .imgh2container img {
+    width: 100%;
+  }
+
+  .imgh2container h2 {
+    font-family: impact;
+    font-size: 0.5rem;
+  }
+
+  .imgh2container {
+    width: 0%;
+    margin: auto;
   }
 }
