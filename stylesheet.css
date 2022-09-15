@@ -188,6 +188,7 @@ body {
 @media (max-width: 992px) {
   .mobil_header {
     display: block;
+    margin-left: 1em;
   }
 
   .sidebar {
@@ -203,6 +204,7 @@ body {
 
   .topnav #myLinks {
     display: none;
+    margin-left: 1.5em;
   }
 
   /* Style navigation menu links */
@@ -223,7 +225,7 @@ body {
 
   #logo {
     max-width: 10rem;
-    margin-left: -1rem;
+    margin-left: 1rem;
   }
 
   .icon {
