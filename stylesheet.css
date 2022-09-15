@@ -59,8 +59,16 @@ body {
   .forside5 {
     border-style: solid;
     border-width: 2rem;
+    border-color: #ffc7c7;
+    box-shadow: 2px 3px 10px rgb(77, 71, 71);
 
     position: relative;
+  }
+
+  .forside5:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    border-color: #f2b5b5;
   }
 
   footer {
@@ -180,6 +188,7 @@ body {
 @media (max-width: 992px) {
   .mobil_header {
     display: block;
+    margin-left: 1em;
   }
 
   .sidebar {
@@ -195,6 +204,7 @@ body {
 
   .topnav #myLinks {
     display: none;
+    margin-left: 1.5em;
   }
 
   /* Style navigation menu links */
@@ -215,7 +225,12 @@ body {
 
   #logo {
     max-width: 10rem;
-    margin-left: -1rem;
+    margin-left: 1rem;
+  }
+
+  .icon {
+    font-size: 2.5em;
+    background-color: rgba(247, 247, 247, 0);
   }
 
   /* for at fjerne ekstra billeder i mobileview */
@@ -227,6 +242,20 @@ body {
   .grid_7-3 .forside5 {
     visibility: visible;
     display: flex;
+  }
+
+  /* styling af forsideknap på mobil, så den ligner desktop */
+  .forside5 {
+    border-style: solid;
+    border-width: 2rem;
+    border-color: #ffc7c7;
+    box-shadow: 2px 3px 10px rgb(77, 71, 71);
+  }
+
+  .forside5:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border-color: #f2b5b5;
   }
 
   h1 {
@@ -265,10 +294,10 @@ body {
     cursor: pointer;
   }
 
-  button:hover {
+  /* Er det til burgermenu? bare ift. forklaring til fremlæggelse hehe (Christines svar: nej ikke til burgermenu) */
+  /*button:hover {
     color: var(--hover);
-    /* Er det til burgermenu? bare ift. forklaring til fremlæggelse hehe */
-  }
+  } */
 
   footer {
     text-align: left;
@@ -322,7 +351,8 @@ body {
   }
 
   .imgh2container {
-    width: 0%;
+    width: 80%;
     margin: auto;
+    padding-top: 1.5rem;
   }
 }
