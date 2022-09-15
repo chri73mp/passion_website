@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="da">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alle sko - Skotøj</title>
-    <link rel="stylesheet" href="stylesheet.css" />
-    <link rel="stylesheet" href="layout.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  </head>
 
-  <body>
-    <!-- Mobile menu start (adapted from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp) -->
-    <div class="mobil_header">
-      <div class="topnav">
-        <a onclick="menuToggle()" class="active"><img src="img/logo.svg" alt="icon" id="logo" /> </a>
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-          <button data-sko="alle" class="valgt">ALLE SKO</button>
-            <button data-sko="marie" class="">MARIES SKO</button>
-            <button data-sko="marius" class="">MARIUS' SKO</button>
-            <button data-sko="christine" class="">CHRISTINES SKO</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alle sko - Skotøj</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="layout.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="icon" type="image/svg+xml" href="img/favicon_sko.svg" />
+</head>
+
+<body>
+  <!-- Mobile menu start (adapted from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp) -->
+  <div class="mobil_header">
+    <div class="topnav">
+      <a onclick="menuToggle()" class="active"><img src="img/logo.svg" alt="icon" id="logo" /> </a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <button data-sko="alle" class="valgt">ALLE SKO</button>
+        <button data-sko="marie" class="">MARIES SKO</button>
+        <button data-sko="marius" class="">MARIUS' SKO</button>
+        <button data-sko="christine" class="">CHRISTINES SKO</button>
 
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a class="icon" onclick="menuToggle()">
@@ -58,7 +60,7 @@
       <!-- her vores array loopes -->
 
       <template>
-         <h1></h1>
+        <h1></h1>
         <!-- det skal være et templatetag og ikke sectiontag her, da sectiontagget ikke vil loopes -->
         <article>
           <div class="grid_4-1">
@@ -99,5 +101,6 @@
       </li>
     </footer>
     <script src="skojavascript.js"></script>
-  </body>
+</body>
+
 </html>
