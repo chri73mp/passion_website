@@ -13,24 +13,24 @@
 </head>
 
 <body>
-  <!-- Mobile menu start (adapted from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp) -->
+  <!-- Inspiration til burgermenu taget fra: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp) -->
   <div class="mobil_header">
     <div class="topnav">
-      <img src="img/logo.svg" alt="icon" id="logo" />
-      <!-- Navigation links (hidden by default) -->
+      <a href="voressko.html"><img src="img/logo.svg" alt="icon" id="logo" /></a>
+      <!-- Links til burgermenuen (links gemt som default) -->
       <div id="myLinks">
         <button data-sko="alle" class="valgt">ALLE SKO</button>
         <button data-sko="marie" class="">MARIES SKO</button>
         <button data-sko="marius" class="">MARIUS' SKO</button>
         <button data-sko="christine" class="">CHRISTINES SKO</button>
       </div>
-      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <!-- Selve burgermenuens ikon. Ikonet kan "toggle" (gemme/vise links) navigation links -->
       <a class="icon" onclick="menuToggle()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
   </div>
-  <!-- Mobile menu end -->
+  <!-- Burgermenu slut-->
   <div class="sidebar">
     <header>
       <a href="index.html"><img src="img/logo.svg" alt="icon" /></a>
